@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressponsive Design Practice</title>
+    <style>
+        body{background-color: lightcyan;}
+        div{
+            font-size: 2rem;
+            margin: 10px;
+            padding: 10px;
+        }
+        .nakuru{
+            display: flex;
+        }
+        .box1{
+            box-shadow: 3px 3px 10px rgb(0,0,0,1);
+            background-color: lightblue;
+        }
+        .box2{
+            box-shadow: 3px 3px 10px rgb(0,0,0,1);
+            background-color: lightyellow;
+        }
+        .box3{
+            box-shadow: 3px 3px 10px rgb(0,0,0,1);
+            background-color: plum;
+        }
+        @media screen and (max-width: 800px) {
+        .nakuru{
+            flex-wrap: wrap;
+            }
+        }
+        @media screen and(max-width: 400px){
+        .nakuru{
+            display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Responsive Design Practice</h1>
+    <div class="nakuru">    
+    <div class="box1">
+        <h2>Section1</h2>
+        <p>This is the first section. It has a light blue background,<br>
+        padding,margin,and a box shadow. The layout adjusts<br>
+        responsively to diffrent screen sizes.</p>
+        <img src="section1.jpg" alt="section1" width="40%">
+    </div>
+    <div class="box2">
+        <h3>Section2</h3>
+        <p>This is second section. It has a light orange background,<br>
+        padding,margin,and a box shadow. The layout adjusts<br>
+        responsively to diffrent screen sizes. </p>
+        <img src="section2.jpg" alt="section2" width="40%">
+    </div>
+    <div class="box3">
+        <h4>Section3</h4>
+        <p>This is the third section. It has a light purple background,<br>
+        padding,margin,and a box shadow. The layout adjusts<br>
+        responsively to diffrent screen sizes.</p>
+        <img src="section3.jpg" alt="section3" width="40%">
+    </div>
+    </div> 
+</body>
+</html>
